@@ -1,0 +1,85 @@
+.services-wrapper {
+  width: 85%;
+  margin: auto;
+}
+.section-title-area {
+  text-align: center;
+}
+.section-title {
+  font-size: 30px;
+}
+.section-title::after {
+  content: "";
+  width: 60px;
+  height: 5px;
+  display: block;
+  background-color: #933d00;
+  margin: 5px auto;
+}
+.service > * {
+  text-align: center;
+}
+.services-list {
+  display: flex;
+  gap: 50px;
+  padding: 70px 0;
+}
+.service > div {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Optional: vertically align the content */
+}
+.service > div > i {
+  font-size: 40px;
+  background-color: red;
+  padding: 30px;
+  border-radius: 50%;
+}
+.web-design {
+  background-color: rgba(14, 147, 0, 0.5) !important;
+  color: #f2f2f2;
+}
+.service-title {
+  margin: 15px 0;
+}
+body {
+  background-color: #bacbc8;
+}
+
+/* Default styles */
+
+/* Add your default styles here */
+
+/* Media query for tablets and smaller screens */
+@media only screen and (max-width: 768px) {
+  .services-wrapper {
+    width: 90%; /* Adjust width to fit smaller screens */
+  }
+
+  .section-title {
+    font-size: 25px; /* Decrease font size for smaller screens */
+  }
+
+  .services-list {
+    flex-direction: column; /* Stack services vertically */
+    gap: 30px; /* Decrease gap between services */
+    padding: 40px 0; /* Adjust padding */
+  }
+
+  .service > div > i {
+    font-size: 30px; /* Decrease icon size */
+    padding: 20px; /* Adjust padding */
+  }
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 480px) {
+  .section-title {
+    font-size: 20px; /* Further decrease font size */
+  }
+
+  .service > div > i {
+    font-size: 25px; /* Further decrease icon size */
+    padding: 15px; /* Further adjust padding */
+  }
+}
