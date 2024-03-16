@@ -1,49 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aayush Duwal</title>
+<html>
+  <header>
     <link rel="stylesheet" href="css/contact.css" />
-  </head>
+    <h1>Contact us</h1>
+  </header>
   <body>
-    <div class="contact-form">
-      <div class="contact-form-wrapper">
-        <div class="section-title-area">
-          <h2 class="section-title">
-            Contact <span class="highlight">Me</span>!
-          </h2>
-          <p>Send me a message</p>
+    <div id="form">
+      <div class="fish" id="fish"></div>
+      <div class="fish" id="fish2"></div>
+
+      <form id="waterform" method="post">
+        <div class="formgroup" id="name-form">
+          <label for="name">Your name*</label>
+          <input type="text" id="name" name="name" />
         </div>
-        <form>
-          <div class="form-group">
-            <label for="name">Enter your name:</label>
-            <input
-              type="text"
-              name="fname"
-              id="name"
-              placeholder="Enter your fullname."
-            />
-          </div>
-          <div class="form-group">
-            <label for="email">Enter your email:</label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Enter your email."
-            />
-          </div>
-          <div class="form-group">
-            <label for="message">Enter your Message:</label>
-            <textarea name="message" id="message"></textarea>
-          </div>
-          <div class="form-group">
-            <input type="button" value="Send Message" />
-          </div>
-        </form>
-      </div>
+
+        <div class="formgroup" id="email-form">
+          <label for="email">Your e-mail*</label>
+          <input type="email" id="email" name="email" />
+        </div>
+
+        <div class="formgroup" id="message-form">
+          <label for="message">Your message</label>
+          <textarea id="message" name="message"></textarea>
+        </div>
+
+        <input type="submit" value="Send your message!" />
+      </form>
     </div>
-    <!-- contact form end -->
   </body>
 </html>

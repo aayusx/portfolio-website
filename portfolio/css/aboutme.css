@@ -38,11 +38,6 @@ footer > p {
   text-align: center;
 }
 
-/* Default styles */
-
-/* Add your default styles here */
-
-/* Media query for tablets and smaller screens */
 @media only screen and (max-width: 768px) {
   .hero-section-wrapper {
     flex-direction: column;
@@ -60,8 +55,8 @@ footer > p {
 
   .hero-left-side > img {
     width: 100%;
-    aspect-ratio: auto; /* Reset aspect ratio */
-    height: auto; /* Reset height */
+    aspect-ratio: auto;
+    height: auto;
   }
 }
 

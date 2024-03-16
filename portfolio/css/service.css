@@ -27,7 +27,7 @@
 .service > div {
   display: flex;
   justify-content: center;
-  align-items: center; /* Optional: vertically align the content */
+  align-items: center;
 }
 .service > div > i {
   font-size: 40px;
@@ -46,40 +46,35 @@ body {
   background-color: #bacbc8;
 }
 
-/* Default styles */
-
-/* Add your default styles here */
-
-/* Media query for tablets and smaller screens */
 @media only screen and (max-width: 768px) {
   .services-wrapper {
-    width: 90%; /* Adjust width to fit smaller screens */
+    width: 90%;
   }
 
   .section-title {
-    font-size: 25px; /* Decrease font size for smaller screens */
+    font-size: 25px;
   }
 
   .services-list {
-    flex-direction: column; /* Stack services vertically */
-    gap: 30px; /* Decrease gap between services */
-    padding: 40px 0; /* Adjust padding */
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px 0;
   }
 
   .service > div > i {
-    font-size: 30px; /* Decrease icon size */
-    padding: 20px; /* Adjust padding */
+    font-size: 30px;
+    padding: 20px;
   }
 }
 
 /* Media query for mobile devices */
 @media only screen and (max-width: 480px) {
   .section-title {
-    font-size: 20px; /* Further decrease font size */
+    font-size: 20px;
   }
 
   .service > div > i {
-    font-size: 25px; /* Further decrease icon size */
-    padding: 15px; /* Further adjust padding */
+    font-size: 25px;
+    padding: 15px;
   }
 }
