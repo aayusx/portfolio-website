@@ -1,121 +1,96 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 * {
   margin: 0;
-  padding: 0;
+  padding: 0; /* corrected typo: "0" instead of "o" */
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
 body {
-  background: #1abc9c;
-  background: url("/portfolio/images/bhaktapur.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center; /* added to vertically center the container */
+  min-height: 100vh;
+  background: url("/portfolio/images/bhaktapur.jpg") no-repeat;
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
-  overflow: hidden;
-}
-::selection {
-  background: rgba(26, 188, 156, 0.3);
+  font-family: "Poppins", sans-serif; /* added font-family */
 }
 .container {
-  max-width: 440px;
-  padding: 0 20px;
-  margin: 170px auto;
-  background: url("/portfolio/images/bhaktapur.jpg") center/cover no-repeat;
-}
-.wrapper {
-  width: 100%;
-  background: #fff;
-  border-radius: 5px;
-  box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.1);
-}
-.wrapper .title {
-  height: 90px;
-  background: #16a085;
-  border-radius: 5px 5px 0 0;
+  /*background: red; /* For demonstration; change to your desired background */
+  width: 420px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
   color: #fff;
-  font-size: 30px;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 30px 40px;
+  backdrop-filter: blur(18px);
 }
-.wrapper form {
-  padding: 30px 25px 25px 25px;
-}
-.wrapper form .row {
-  height: 45px;
-  margin-bottom: 15px;
-  position: relative;
-}
-.wrapper form .row input {
-  height: 100%;
-  width: 100%;
-  outline: none;
-  padding-left: 60px;
-  border-radius: 5px;
-  border: 1px solid lightgrey;
-  font-size: 16px;
-  transition: all 0.3s ease;
-}
-form .row input:focus {
-  border-color: #16a085;
-  box-shadow: inset 0px 0px 2px 2px rgba(26, 188, 156, 0.25);
-}
-form .row input::placeholder {
-  color: #999;
-}
-.wrapper form .row i {
-  position: absolute;
-  width: 47px;
-  height: 100%;
-  color: #fff;
-  font-size: 18px;
-  background: #16a085;
-  border: 1px solid #16a085;
-  border-radius: 5px 0 0 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.wrapper form .pass {
-  margin: -8px 0 20px 0;
-}
-.wrapper form .pass a {
-  color: #16a085;
-  font-size: 17px;
-  text-decoration: none;
-}
-.wrapper form .pass a:hover {
-  text-decoration: underline;
-}
-.wrapper form .button input {
-  color: #fff;
-  font-size: 20px;
-  font-weight: 500;
-  padding-left: 0px;
-  background: #16a085;
-  border: 1px solid #16a085;
-  cursor: pointer;
-}
-form .button input:hover {
-  background: #12876f;
-}
-.wrapper form .signup-link {
+.container h1 {
+  font-size: 36px;
+  letter-spacing: 1px;
   text-align: center;
-  margin-top: 20px;
-  font-size: 17px;
 }
-.wrapper form .signup-link a {
-  color: #16a085;
+.container .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+.input-box input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent; /* corrected typo: "background transparent" */
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  padding: 15px; /* adjusted padding */
+  padding-right: 45px; /* added padding for icon */
+  font-size: 16px;
+  color: #fff;
+}
+.input-box input::placeholder {
+  color: #fff;
+}
+.container .remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  margin: -15px 0 15px;
+  font-size: 14.5px;
+}
+.remember-forgot label input {
+  color: #fff;
+  margin-right: 3px;
+}
+.remember-forgot a {
+  color: #fff;
   text-decoration: none;
 }
-form .signup-link a:hover {
+.remember-forgot a:hover {
   text-decoration: underline;
 }
-/* Responsive adjustments */
-@media screen and (max-width: 600px) {
-  .container {
-    max-width: 100%; /* Adjust container width for smaller screens */
-    margin: 20% auto; /* Adjust margin for smaller screens */
-  }
+.container .btn {
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+}
+.container .btn:hover {
+  background: #e0e0e0; /* Added hover effect */
+}
+.container .register-link {
+  font-size: 14.5px;
+  text-align: center;
+  margin: 20px 0 20px;
+}
+.register-link p a {
+  color: #fff;
+  text-decoration: none;
+}
+.register-link p a:hover {
+  text-decoration: underline;
 }
